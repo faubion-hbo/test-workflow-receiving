@@ -11,4 +11,4 @@ jobs:
       - env:
           CONTEXT: ${{ toJson(github) }}
         run: |
-          echo $CONTEXT
+          jq . <<< $CONTEXT
